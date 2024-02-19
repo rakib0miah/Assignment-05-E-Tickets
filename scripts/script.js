@@ -7,7 +7,10 @@ document.getElementById('buy-ticket-btn').addEventListener('click', function () 
 })
 
 document.getElementById('buyBus-ticket-btn').addEventListener('click', function(){
-    const 
+    const ticket = document.getElementById('ticket');
+    ticket.scrollIntoView({ 
+        
+    })
 })
 
 
