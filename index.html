@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Ticketing</title>
-    <!-- tailwind and daisyUI link  -->
+    <!-- tailwind & daisyUI  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -25,14 +25,13 @@
             }
         }
     </script>
-    <!-- row css style file  -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <!-- header section  -->
     <header class="w-10/12 mx-auto pt-6 mb-16">
-        <!-- nav bar part  -->
+        <!-- nav bar  -->
         <nav class="navbar font-raleway p-0">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -71,7 +70,7 @@
                 </button>
             </div>
         </nav>
-        <!-- banner part  -->
+        <!-- bannerSection  -->
         <section
             class="bg-[url('./img/banner.png')] bg-no-repeat bg-contain bg-center min-h-[550px] text-white mt-8 flex items-center justify-center">
             <div class="w-8/12 text-center space-y-8">
@@ -84,7 +83,7 @@
                     class="bg-primaryColor border-none text-primaryTitleColor text-xl font-bold px-7 py-5 rounded-xl content-center">Buy
                     Tickets</button>
         </section>
-        <!-- header badge  -->
+        <!-- header Section  -->
         <section class="flex justify-center gap-5 relative bottom-16">
             <div
                 class="bg-white flex px-8 items-center justify-center py-7 rounded-3xl gap-4 text-center border-b-2 border-primaryColor">
@@ -151,17 +150,17 @@
                     All Offers</button>
             </div>
         </section>
-        <!-- P H paribahan section  -->
-        <section id="paribahan" class="bg-primaryBgColor border-t-2 rounded-t-[80px] border-primaryColor mt-28">
-            <!-- p.h info part  -->
+        <!-- paribahan section  -->
+        <section id="paribahan" class="bg-primaryBgColor border-t-2 rounded-t-[70px] mt-28">
+
             <div class="w-10/12 mt-28 m-6 mx-auto">
-                <h1 class="text-center text-[40px] font-bold text-primaryTitleColor font-raleway">P.H Paribahan
+                <h1 class="text-center text-[40px] font-bold text-primaryTitleColor font-raleway">GreenLine Paribahan
                 </h1>
-                <p class="text-primaryDesColor text-lg text-center w-8/12 mx-auto mb-10">P H Paribahan: Reliable
+                <p class="text-primaryDesColor text-lg text-center w-8/12 mx-auto mb-10">GreenLine Paribahan: Reliable
                     transportation
                     with experienced drivers, punctuality, safety. Efficient travel for valued
                     customers.</p>
-                <!-- ph info part  -->
+                <!--info part-->
                 <div class="flex items-center bg-[#FFFFFF] px-8 rounded-3xl">
                     <div class="w-8/12">
                         <div class="flex justify-between">
@@ -216,9 +215,9 @@
                     </div>
                 </div>
             </div>
-            <!-- p.h seats part  -->
+            <!-- tickets Section  -->
             <div id="ticket" class=" w-10/12 mx-auto p-8 rounded-3xl bg-white lg:flex gap-8">
-                <!-- seats side  -->
+                
                 <div class="border-e-2 border-dashed border-gray-300 w-3/5 pr-8">
                     <h3
                         class="font-raleway font-semibold text-2xl text-primaryTitleColor border-b-2 border-dashed border-gray-300 pb-6">
@@ -236,7 +235,7 @@
                         </p>
                     </div>
 
-                    <!-- all seats are here  -->
+                    <!-- Seat Section -->
                     <div class="mt-6">
                         <div class="flex justify-end">
                             <button
@@ -397,7 +396,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- info side  -->
+                
                 <div class="flex-1">
                     <h3
                         class="font-raleway font-semibold text-2xl text-primaryTitleColor border-b-2 border-dashed border-gray-300 pb-6">
@@ -408,16 +407,16 @@
                             <span>Seat<sup id="selected-seat-count"
                                     class="bg-primaryColor text-white px-2 rounded-lg ml-1">0</sup></span><span>Class</span><span>Price</span>
                         </p>
-                        <!-- selected seats zone  -->
+                        
                         <div id="seat-details-container"
                             class="font-inter text-base text-seatColor mt-5 space-y-4 pb-3 border-b-2 border-[#03071233]">
                         </div>
-                        <!-- total price zone  -->
+                        <!-- Price Section -->
                         <div class="flex justify-between mt-2 font-inter font-medium text-base text-primaryTitleColor">
                             <p>Total Price</p>
                             <p>BDT <span id="total-price">0</span></p>
                         </div>
-                        <!-- coupon entry field  -->
+                        
                         <div id="coupon-container" class="flex mt-4 relative">
                             <input type="text" class="w-full text-[#03071266] rounded-xl px-5 py-4" name=""
                                 id="coupon-field" placeholder="Have any coupon?">
@@ -426,25 +425,24 @@
                                 Apply
                             </button>
                         </div>
-                        <!-- discount amount field  -->
+                        
                         <div id="discount-total"
                             class="flex justify-between mt-4 font-inter font-medium text-base text-primaryTitleColor">
-
                         </div>
-                        <!-- grand total part  -->
+                        
                         <div class="flex justify-between mt-4 font-inter font-medium text-base text-primaryTitleColor">
                             <p>Grand Total</p>
                             <p>BDT <span id="grand-total">0</span></p>
                         </div>
                     </div>
-                    <!-- passanger details part  -->
+                    
                     <div class="mt-6 space-y-6">
                         <div>
                             <h2 class="font-inter font-semibold text-base text-primaryTitleColor">Passenger
                                 Name<sup>*</sup></h2>
                             <input type="text"
                                 class="w-full border border-[#0307121A] rounded-xl text-[#03071266] font-inter text-base mt-4 p-5"
-                                name="" id="" placeholder="Enter your name" required>
+                                name="" id="" placeholder="Enter Your Name" required>
                         </div>
                         <div>
                             <h2 class="font-inter font-semibold text-base text-primaryTitleColor">Phone
@@ -457,7 +455,7 @@
                             <h2 class="font-inter font-semibold text-base text-primaryTitleColor">Email ID</h2>
                             <input type="email"
                                 class="w-full border border-[#0307121A] rounded-xl text-[#03071266] font-inter text-base mt-4 p-5"
-                                name="" id="" placeholder="Enter your email Id">
+                                name="" id="" placeholder="Enter Your Email Address">
                         </div>
                         <button
                             class="font-raleway font-extrabold text-xl text-white bg-primaryColor w-full py-5 px-8 rounded-2xl"
@@ -480,14 +478,15 @@
                                 </div>
                                 <div class="modal-action">
                                     <form method="dialog">
-                                        <!-- if there is a button, it will close the modal -->
+                                      
                                         <button class="btn">Close</button>
                                     </form>
                                 </div>
                             </div>
                         </dialog>
                     </div>
-                    <!-- terms condition part  -->
+                    
+
                     <div class="flex justify-around mt-6">
                         <p class="border-b-2 border-gray-400 text-[#03071299] font-inter text-base">Terms and
                             Condition
@@ -506,18 +505,18 @@
                         <p class="text-gray-300 text-xl mt-2">To making a better daily commuting you can choose it.</p>
                         <p class="text-gray-300 mt-10">@all rights reserved, R-Ticket services limited.2024</p>
                     </div>
-                    <div>
-                        <div class="text-end">
-                            <h3 class="text-2xl font-bold text-white">DownLoad Our App</h3>
-                            <div class="flex justify-around my-4 gap-2 border border-gray-300 rounded-sm">
+                    <div class="ml-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Download Our App</h3>
+                            <div class="flex my-4 gap-2 ">
                                 <img src="img/playstore.png" alt="">
                                 <div class="text-white">
-                                    <h5 class="text-lg">GET IT ON</h5>
-                                    <h2 class="text-2xl font-semibold">Google Play</h2>
+                                    <h5 class="text-2xl">GET IT ON</h5>
+                                    <h2 class="text-3xl font-semibold">Google Play</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex justify-end gap-4 text-end text-white text-xs font-semibold font-inter">
+                        <div class="flex gap-4 text-white text-xs font-semibold font-inter">
                             <p>Terms & Condition</p>
                             <p>Return & refund policy</p>
                             <p>Privacy policy</p>
@@ -527,9 +526,6 @@
             </footer>
         </section>
     </main>
-
-
-    <!-- script file  -->
     <script src="scripts/script.js"></script>
 </body>
 

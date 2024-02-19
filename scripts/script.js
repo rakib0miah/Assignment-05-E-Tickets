@@ -1,4 +1,4 @@
-// buy tickets btn navigation 
+
 document.getElementById('buy-ticket-btn').addEventListener('click', function () {
     const paribahan = document.getElementById('paribahan');
     paribahan.scrollIntoView({ 
@@ -9,12 +9,12 @@ document.getElementById('buy-ticket-btn').addEventListener('click', function () 
 document.getElementById('buyBus-ticket-btn').addEventListener('click', function(){
     const ticket = document.getElementById('ticket');
     ticket.scrollIntoView({ 
-        
+
     })
 })
 
 
-// seats click function 
+ 
 const allSeats = document.getElementsByClassName('seat-btn');
 
 
@@ -25,11 +25,10 @@ for (let seat of allSeats) {
         const seatName = e.target.innerText;
 
 
-        // set selected total seats 
         const newSelectedSeats = selectedSeatsCount + 1;
         setElement('selected-seat-count', newSelectedSeats)
 
-        // maximum seat control control 
+  
         const totalSelectSeat = getElementNumberId('selected-seat-count');
         if (totalSelectSeat > 4) {
             alert('You are able to buy maximum 4 tickets!')
@@ -39,26 +38,22 @@ for (let seat of allSeats) {
 
 
 
-        // set rest seats
         const newRestSeats = restSeats - 1;
         setElement('rest-seat', newRestSeats);
-
-        // set selected-Bg-color 
+ 
         const selectedBtn = e.target;
         selectedBtn.classList.add('bg-primaryColor');
         selectedBtn.classList.add('text-white');
         selectedBtn.classList.add('pointer-events-none');
 
-        // seat details set and create function call
         seatDetails(seatName);
 
-        // total price calculation
         totalPriceCalculation();
 
     })
 }
 
-// total price calculation 
+// calculation 
 function totalPriceCalculation() {
     const previousTotalPrice = getElementNumberId('total-price');
     const perSeatPrice = getElementNumberId('per-seat-price');
@@ -68,7 +63,7 @@ function totalPriceCalculation() {
 }
 
 
-// coupon calculation -----
+//--------- calculation -----
 
 document.getElementById('coupon-btn').addEventListener('click', function () {
     const discountContainer = document.getElementById('discount-total');
@@ -104,7 +99,6 @@ document.getElementById('coupon-btn').addEventListener('click', function () {
 })
 
 
-// seat details create function
 function seatDetails(seatName) {
     const seatDetailsContainer = document.getElementById('seat-details-container');
     const div = document.createElement('div');
@@ -121,8 +115,6 @@ function seatDetails(seatName) {
 }
 
 
-
-// if i want a element with convert in number 
 function getElementNumberId(id) {
     const element = document.getElementById(id);
     const elementCount = parseInt(element.innerText);
@@ -130,7 +122,7 @@ function getElementNumberId(id) {
 }
 
 
-// set element 
+
 function setElement(elementId, value) {
     const restSeatsBox = document.getElementById(elementId);
     restSeatsBox.innerText = value;
