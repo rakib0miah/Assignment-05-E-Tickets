@@ -86,8 +86,8 @@
                             <button onclick="scrollToTicketPrice()" id="buy-ticket-btn" class="btn btn-success">Buy Tickets</button>
 
                         </div>
-
-                        <div class="flex justify-center gap-6 mb-[-80px]">
+                         <!-- Users section  -->
+                         <div class="flex justify-center gap-6 mb-[-80px]">
                             <!-- Rating -->
                             <div>
                                 <div class="stats shadow">
@@ -134,48 +134,54 @@
                                     </div>
                                 </div>
                             </div>
-
-
-                        </div>
+                        </div>  
                     </div>
                 </div>
             </div>
-
         </section>
     </header>
+    
     <!-- main section  -->
     <main>
         <!-- best offers section  -->
         <section class="w-10/12 mx-auto">
-            <h1 class="text-center text-[40px] font-bold text-primaryTitleColor font-raleway mb-12">Best offers for you
-            </h1>
+            <section class="flex justify-center">
+                <div class="mt-28">
+                    <h1 class="font-bold text-4xl text-center mt-28">Best Offer For You</h1>
+                    <div class="flex grid md:grid-cols-1 lg:grid-cols-2 gap-6 mt-12 ">
+                        <!-- ---------container 1------------- -->
+                        <div class="flex  bg-[#FFBF0F] rounded-3xl max-w-3xl items-center	 h-56 pl-10">
+                            <div>
+                                <h1 class="inter  font-extrabold text-[40px] text-[#030712CC] ">15% OFF</h1>
+                                <h3 class="font-semibold text-[#030712CC] text-[20px]">on your next purchase</h3>
+                                <p class="text-[18px] text-[#03071280]">use by january 2024</p>
+                            </div>
+                            <img class=" ml-20 " src="img/cupon-devider.png" alt="">
+                            <div class="pl-6">
+                                <h1 class="font-extrabold text-3xl">New 15</h1>
+                                <p class="font-medium text-[20px] text-[#03071266]">coupon Code</p>
+                            </div>
+                        </div>
+                        <!-- -------------container2-------- -->
+                        <div class="flex  bg-[#F78C9C] rounded-3xl max-w-3xl items-center	 h-56 pl-10">
+                            <div>
+                                <h1 class="inter  font-extrabold text-[40px] text-[#030712CC] ">20% OFF</h1>
+                                <h3 class="font-semibold text-[#030712CC] text-[20px]">on your next purchase</h3>
+                                <p class="text-[18px] text-[#03071280]">use by january 2024</p>
+                            </div>
+                            <img class=" ml-20 " src="img/cupon-devider.png" alt="">
+                            <div class="pl-6">
+                                <h1 class="font-extrabold text-3xl">Couple 20</h1>
+                                <p class="font-medium text-[20px] text-[#03071266]">coupon Code</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+
+
             <!-- offers card part  -->
-            <div class="lg:flex lg:justify-center md:text-cente gap-6">
-                <div class="lg:flex items-center flex-1 bg-[#FFBF0F] px-12 rounded-3xl">
-                    <div class="font-inter flex-1">
-                        <h1 class="text-[40px] font-[900] text-[#030712CC]">15% OFF</h1>
-                        <p class="text-[#030712CC] text-xl font-semibold">on your next purchase</p>
-                        <p class="text-lg font-medium text-seatColor">use by January 2024</p>
-                    </div>
-                    <img class="hidden lg:block" src="img/cupon-devider.png" alt="">
-                    <div class="font-raleway text-center w-1/3">
-                        <h1 class="text-3xl font-bold text-primaryTitleColor">NEW15</h1>
-                        <p class="text-[#03071266] text-xl font-medium">Coupon Code</p>
-                    </div>
-                </div>
-                <div class="lg:flex mt-12 lg:mt-0 items-center flex-1 bg-[#F78C9C] px-12 rounded-3xl">
-                    <div class="font-inter flex-1">
-                        <h1 class="text-[40px] font-[900] text-[#030712CC]">20% OFF</h1>
-                        <p class="text-[#030712CC] text-xl font-semibold">on your next purchase</p>
-                        <p class="text-lg font-medium text-seatColor">use by January 2024</p>
-                    </div>
-                    <img class="hidden lg:block" src="img/cupon-devider.png" alt="">
-                    <div class="font-raleway text-center w-1/3">
-                        <h1 class="text-3xl font-bold text-primaryTitleColor">Couple 20</h1>
-                        <p class="text-[#03071266] text-xl font-medium">Coupon Code</p>
-                    </div>
-                </div>
-            </div>
             <div class="flex justify-center mt-16">
                 <button
                     class="px-8 py-5 border border-primaryColor rounded-xl text-primaryColor text-xl font-bold font-raleway">See
@@ -437,7 +443,7 @@
                         <p
                             class="font-inter font-medium text-base text-primaryTitleColor flex justify-between pb-4 border-b border-dashed border-[#03071233]">
                             <span>Seat<sup id="selected-seat-count"
-                                    class="bg-primaryColor text-white px-2 rounded-lg ml-1">0</sup></span><span>Class</span><span>Price</span>
+                                    class="bg-primaryColor text-white px-2 rounded-lg ml-1">0</sup></span><span>Class</span><span>Price <span>[Tk]</span></span>
                         </p>
                         
                         <div id="seat-details-container"
@@ -446,7 +452,7 @@
                         <!-- Price Section -->
                         <div class="flex justify-between mt-2 font-inter font-medium text-base text-primaryTitleColor">
                             <p>Total Price</p>
-                            <p>BDT <span id="total-price">0</span></p>
+                            <p>BDT <span id="total-price">0</span> <span>Tk</span></p>
                         </div>
                         
                         <div id="coupon-container" class="flex mt-4 relative">
@@ -464,7 +470,7 @@
                         
                         <div class="flex justify-between mt-4 font-inter font-medium text-base text-primaryTitleColor">
                             <p>Grand Total</p>
-                            <p>BDT <span id="grand-total">0</span></p>
+                            <p>BDT <span id="grand-total">0</span> <span>Tk</span></p>
                         </div>
                     </div>
                     

@@ -72,7 +72,7 @@ document.getElementById('coupon-btn').addEventListener('click', function () {
     const couponCode = couponField.value;
     const totalPrice = getElementNumberId('total-price');
 
-    if (couponCode === 'NEW15') {
+    if (couponCode === 'New 15') {
         const discount = totalPrice * 15 / 100;
         const grandPrice = totalPrice - discount;
         setElement('grand-total', grandPrice);
@@ -109,7 +109,7 @@ function seatDetails(seatName) {
     div.innerHTML = `
             <p>${seatName}</p>
             <p>Economy</p>
-            <p>550</p>         
+            <p>550 Tk</p>
         `
     seatDetailsContainer.appendChild(div);
 }
