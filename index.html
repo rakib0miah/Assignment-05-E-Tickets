@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Ticketing</title>
+    <title>E-Ticketing</title>
     <!-- tailwind & daisyUI  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -70,55 +70,87 @@
                 </button>
             </div>
         </nav>
-        <!-- bannerSection  -->
-        <section
-            class="bg-[url('./img/banner.png')] bg-no-repeat bg-contain bg-center min-h-[550px] text-white mt-8 flex items-center justify-center">
-            <div class="w-8/12 text-center space-y-8">
-                <h1 class="text-6xl font-extrabold">End-to-End Travel with <br><span class="text-primaryColor">GreenLine Paribahan</span></h1>
-                <p class="text-lg">Experience hassle-free end-to-end travel with GreenLine Paribahan. Trustworthy and efficient
-                    service for all your journey
-                    requirements.
-                </p>
-                <button id="buy-ticket-btn"
-                    class="bg-primaryColor border-none text-primaryTitleColor text-xl font-bold px-7 py-5 rounded-xl content-center">Buy
-                    Tickets</button>
-        </section>
-        <!-- header Section  -->
-        <section class="flex justify-center gap-5 relative bottom-16">
-            <div
-                class="bg-white flex px-8 items-center justify-center py-7 rounded-3xl gap-4 text-center border-b-2 border-primaryColor">
-                <img src="img/people.png" alt="">
-                <div>
-                    <h1 class="text-primaryTitleColor text-4xl font-bold">500K+</h1>
-                    <p class="text-primaryDesColor text-lg">Registered users</p>
+
+        <!-- banner section  -->
+        <section class=" flex justify-center md:mx-10 mt-10 ">
+            <div>
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full" src="img/banner.png" alt="Shoes" /></figure>
+                    <div class="card-body mt-16 text-center">
+                        <h2 class="font-extrabold	text-6xl text-[#FFFFFF]">End-to-End Travel with <br> <span
+                                class="text-[#1DD100]">GreenLine Paribahan</span></h2>
+                        <p class=" text-xl font-normal px-32 mt-12 pb-14">Yes, you can run unit tests and view the
+                            results directly within the app. The integrated testing features allow for a streamlined .
+                        </p>
+                        <div class="card-actions justify-center mb-24">
+                            <button onclick="scrollToTicketPrice()" id="buy-ticket-btn" class="btn btn-success">Buy Tickets</button>
+
+                        </div>
+
+                        <div class="flex justify-center gap-6 mb-[-80px]">
+                            <!-- Rating -->
+                            <div>
+                                <div class="stats shadow">
+                                    <div class="stat">
+                                        <div class="flex">
+                                            <div>
+                                                <img src="img/people.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h1 class="font-bold text-4xl">500K+</h1>
+                                                <p>Registered Users</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="stats shadow">
+                                    <div class="stat">
+                                        <div class="flex">
+                                            <div>
+                                                <img src="img/ticket-cupon.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h1 class="font-bold text-4xl">500K+</h1>
+                                                <p>Tickets sold</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="stats shadow">
+                                    <div class="stat">
+                                        <div class="flex">
+                                            <div>
+                                                <img src="img/stoppage.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h1 class="font-bold text-4xl">500K+</h1>
+                                                <p>Rental partners</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div
-                class="bg-white flex px-8 items-center justify-center py-7 rounded-3xl gap-4 text-center border-b-2 border-primaryColor">
-                <img src="img/ticket-cupon.png" alt="">
-                <div>
-                    <h1 class="text-primaryTitleColor text-4xl font-bold">500K+</h1>
-                    <p class="text-primaryDesColor text-lg">Tickets sold</p>
-                </div>
-            </div>
-            <div
-                class="bg-white flex px-8 items-center justify-center py-7 rounded-3xl gap-4 text-center border-b-2 border-primaryColor">
-                <img src="img/stoppage.png" alt="">
-                <div>
-                    <h1 class="text-primaryTitleColor text-4xl font-bold">500K+</h1>
-                    <p class="text-primaryDesColor text-lg">Rental Partners</p>
-                </div>
-            </div>
+
         </section>
     </header>
-    <!-- main section start  -->
+    <!-- main section  -->
     <main>
         <!-- best offers section  -->
         <section class="w-10/12 mx-auto">
             <h1 class="text-center text-[40px] font-bold text-primaryTitleColor font-raleway mb-12">Best offers for you
             </h1>
-            <!-- card part  -->
-            <div class="lg:flex lg:justify-center gap-6">
+            <!-- offers card part  -->
+            <div class="lg:flex lg:justify-center md:text-cente gap-6">
                 <div class="lg:flex items-center flex-1 bg-[#FFBF0F] px-12 rounded-3xl">
                     <div class="font-inter flex-1">
                         <h1 class="text-[40px] font-[900] text-[#030712CC]">15% OFF</h1>
